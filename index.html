@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilo.css">
+    
+    <title>Escola de música</title>
+</head>
+
+<body>
+    <section class="form-container">
+
+        <div class="logo">
+            <img src="icone.png" alt="">
+        </div>
+        <!-- action="https://formsubmit.co/fabricioguitar82@gmail.com" method="POST" -->
+        <form action="https://formsubmit.co/fabricioguitar82@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+            <input type="hidden" name="_captcha" value="false">
+            
+                <h1>Aulas De Música</h1>
+            
+            <div class="form">
+                <input type="text" class="input" name="nome" placeholder="Informe seu nome"><br>
+                <small>mensagem</small>
+            </div>
+            <div class="form">
+                <input type="text" class="input" name="idade" placeholder="Informe sua idade"><br>
+                <small>mensagem</small>
+            </div>
+            <div class="form">
+                <input type="text" class="input" name="whatsApp" placeholder="Informe seu whatsApp"><br>
+                <small>mensagem</small>
+            </div>
+            <div>
+                <p>Qual instrumento Quer Aprender?</p>
+                <input type="radio" name="instrumento" value="violao-guitarra" checked>
+                <label for="violao-guitarra">Violão/ Guitarra</label><br>
+                <input type="radio" name="instrumento" value="contrabaixo">
+                <label for="contrabaixo">Contra-baixo</label><br>
+                <input type="radio" name="instrumento" value="teclado">
+                <label for="teclado">Teclado</label><br>
+            </div>
+            <div>
+                <p>Qual nível de conhecimento?</p>
+                <input type="radio" name="nivel" value="nenhum" checked>
+                <label for="nenhum">Nenhum conhecimento</label><br>
+                <input type="radio" name="nivel" value="iniciante">
+                <label for="iniciante">Iniciante</label><br>
+                <input type="radio" name="nivel" value="medio">
+                <label for="medio">Intermediario</label><br>
+                <input type="radio" name="nivel" value="nao-sei">
+                <label for="nao-sei">Não sei informar</label><br>
+            </div>
+            <button type="submit" id="btn">Enviar</button>
+        </form>
+    </section>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
